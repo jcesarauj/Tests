@@ -1,20 +1,31 @@
 ﻿using System;
 
-namespace Recursividade
+namespace eficientJanitor
 {
 	class Program
 	{
 		static void Main(string[] args)
 		{
 			double[] arr = { 1.01, 1.991, 1.32, 1.4 };
-			Array.Sort(arr);
-			var total = Sum(arr, 0);
+
+			int i = 0;
+			int trips = 0;
+			while (i < arr.Length)
+			{
+				double temporary = arr[i] + arr[i + 1];
+				if (temporary < 3)
+				{
+					trips++;
+					i += 2;
+				}
+				else
+				{
+					trips++;
+					i += 1;
+				}
+			}
+			Console.WriteLine(trips);
 		}
 
-		static double Sum(double[] arr, int last)
-		{
-			if (last < arr.Length) return arr[last] + Sum(arr, last + 1);
-			else return 0;
-		}
 	}
 }
