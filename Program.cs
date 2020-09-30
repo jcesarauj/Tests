@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace eficientJanitor
+namespace Recursividade
 {
 	class Program
 	{
