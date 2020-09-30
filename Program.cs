@@ -8,7 +8,7 @@ namespace Recursividade
 		{
 			double[] arr = { 1.01, 1.991, 1.32, 1.4 };
 			Array.Sort(arr);
-			var total = Sum(arr, 0) / 3;
+			var total = Sum(arr, 0);
 		}
 
 		static double Sum(double[] arr, int last)
