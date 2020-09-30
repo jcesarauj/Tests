@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace eficientJanitor
+namespace EficientJanitor
 {
 	class Program
 	{
